@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hasan-modal">
+        <div class="hasan-popub">
+            <div class="h-close-button">
+                <a onclick="$(this).parent().parent().parent().hide().find('#popub_mesaj_id').find('.mesaj_metni_div').empty()"
+                   title="kapat"
+                   style="cursor: pointer">
+                    <i style="cursor:pointer; font-size: 30px " class=" fa fa-times"></i>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 h-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-9" id="popub_mesaj_id" style="margin: auto;">
+                    <div class="mesaj_metni_div">
+                        <p  style='padding-bottom: 21px; font-size: 25px'> Kaydınız başarıyla alınmıştır</p>
+                    </div>
+                    <div class="row modal_buttonlar" style="  margin: 0 auto">
+                        <div class="col-lg-6">
+                            <a href="#footer" class="btn btn-success" id="tamamla" style="font-size: 1.25rem"><i
+                                        class="fas fa-check"></i> Tamamla</a>
+                        </div>
+                        <div class="col-lg-6 duzenleme_buttonu">
+                            <a class="btn  btn-warning"
+                               onclick="$(this).parent().parent().parent().parent().parent().parent().hide().find('#popub_mesaj_id').find('.mesaj_metni_div').empty()"
+                               style=" font-size: 1.25rem"><i class="fas fa-redo"></i> Geri Dön</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+</body>
+</html>
